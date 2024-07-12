@@ -1,0 +1,67 @@
+{
+	"version": 1,
+	"settings": {
+		"layout": {
+			"contentSize": "960px",
+			"wideSize": "1280px"
+		},
+		"color": {
+			"palette": [
+				{
+					"name": "Lavender",
+					"slug": "lavender",
+					"color": "#6F7892"
+				},
+				{
+					"name": "Light Lavender",
+					"slug": "light-lavender",
+					"color": "#D9DAE2"
+				},
+				{
+					"name": "Sage",
+					"slug": "sage",
+					"color": "#94AB78"
+				},
+				{
+					"name": "Charcoal",
+					"slug": "charcoal",
+					"color": "#414042"
+				}
+			]
+		},
+		"typography": {
+			"fontSizes": [
+				{
+					"name": "Small",
+					"slug": "small",
+					"size": "0.875rem"
+				},
+				{
+					"slug": "regular",
+					"name": "Regular",
+					"size": "1.5rem"
+				},
+				{
+					"slug": "large",
+					"name": "Large",
+					"size": "1.125rem"
+				},
+				{
+					"slug": "xl",
+					"name": "XL",
+					"size": "1.25rem"
+				},
+				{
+					"slug": "xxl",
+					"name": "2XL",
+					"size": "1.5rem"
+				},
+				{
+					"slug": "xxxl",
+					"name": "3XL",
+					"size": "1.875rem"
+				}
+			]
+		}
+	}
+}
