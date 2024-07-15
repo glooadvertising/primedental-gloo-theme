@@ -10,7 +10,6 @@
 </head>
 
 <body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
-
 <?php do_action( 'tailpress_site_before' ); ?>
 
 <div id="page" class="min-h-screen flex flex-col">
@@ -20,14 +19,14 @@
 	<header>
 
 		<div class="mx-auto container">
-			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">
-				<div class="flex justify-between items-center">
+			<div class="lg:flex lg:justify-between lg:items-center py-6">
+				<div class="flex justify-between items-end w-full">
 					<div>
 						<?php if ( has_custom_logo() ) { ?>
                             <?php the_custom_logo(); ?>
 						<?php } else { ?>
 							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
-								<img src="<?php echo get_template_directory_uri(); ?>/resources/images/prime-dental_logo.svg" alt="<?php echo get_bloginfo( 'name' ); ?> Logo">
+								<img src="<?php echo get_template_directory_uri(); ?>/resources/images/prime-dental_logo.svg" alt="<?php echo get_bloginfo( 'name' ); ?> Logo" class="w-[150px]">
 							</a>
 
 							<p class="text-sm font-light text-gray-600">
@@ -36,7 +35,7 @@
 
 						<?php } ?>
 					</div>
-
+					<a href="#" class="btn">Book appointment</a>
 					<div class="lg:hidden">
 						<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
 							<svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1"
@@ -68,21 +67,15 @@
 		</div>
 	</header>
 
-	<div id="content" class="site-content flex-grow">
+	<div id="content" class="site-content flex flex-grow flex-1">
 
 		<?php if ( is_front_page() ) { ?>
 			<!-- Start introduction -->
-			<div class="container mx-auto">
-				<div class="px-12 py-16 my-12 rounded-xl bg-gradient-to-r from-sage/75 from-10% via-sage via-30% to-lavender to-90%">
-                    <div class="mx-auto max-w-screen-md">
-                        <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">Start building your next <a href="https://tailwindcss.com" class="text-secondary">Tailwind CSS</a> flavoured WordPress theme
-                            with <a href="https://tailpress.io" class="text-primary">TailPress</a>.</h1>
-                        <p class="text-gray-600 text-xl font-medium mb-10">TailPress is your go-to starting
-                            point for developing WordPress themes with Tailwind CSS and comes with basic block-editor support out
-                            of the box.</p>
-                        <a href="https://github.com/jeffreyvr/tailpress"
-                            class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
-                            on GitHub</a>
+			<div class="container mx-auto flex items-center justify-center">
+				<div class="px-12 py-16 rounded-xl bg-light-lavender h-full w-full flex items-center">
+                    <div class="mx-auto max-w-screen-xl">
+                        <h1 class="text-3xl lg:text-6xl tracking-tight uppercase font-extralight text-lavender mb-6">Welcome to <?php bloginfo('name'); ?></h1>
+                        
                     </div>
                 </div>
 			</div>
