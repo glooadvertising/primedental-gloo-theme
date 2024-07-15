@@ -67,16 +67,19 @@
 		</div>
 	</header>
 
-	<div id="content" class="site-content flex flex-grow flex-1">
+	<div id="content" class="site-content flex flex-grow flex-1 h-[100vh]">
 
 		<?php if ( is_front_page() ) { ?>
 			<!-- Start introduction -->
 			<div class="container mx-auto flex items-center justify-center">
-				<div class="px-12 py-16 rounded-xl bg-light-lavender h-full w-full flex items-center">
-                    <div class="mx-auto max-w-screen-xl">
-                        <h1 class="text-3xl lg:text-6xl tracking-tight uppercase font-extralight text-lavender mb-6">Welcome to <?php bloginfo('name'); ?></h1>
-                        
+				<div class="px-12 py-16 rounded-xl bg-light-lavender h-full w-full flex justify-start items-center relative overflow-hidden">
+                    <div class="flex max-w-screen-xl">
+                        <h1 class="text-3xl lg:text-7xl tracking-tight uppercase font-extralight text-lavender mb-6">Welcome to<br><?php bloginfo('name'); ?></h1>
                     </div>
+					<svg viewBox="0 0 307 468" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 h-[50%]">
+						<path d="M307 0.0950855V468H233.909C105.311 468 0 362.743 0 234C0 105.257 105.216 0 233.909 0H307V0.0950855Z" fill="#6E7791"/>
+					</svg>
+
                 </div>
 			</div>
 			<!-- End introduction -->

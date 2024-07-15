@@ -7,10 +7,12 @@
 
 <?php do_action( 'tailpress_content_after' ); ?>
 
+
+</div>
 <footer id="colophon" class="site-footer py-12" role="contentinfo">
 	<?php do_action( 'tailpress_footer' ); ?>
 
-	<div class="container mx-auto pb-6 text-center text-lavender flex justify-between uppercase border-b border-sage">
+	<div class="container mx-auto pb-6 text-center text-lavender text-xs flex justify-between uppercase border-b border-sage">
 		<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
 			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/prime-dental_logo.svg" alt="<?php echo get_bloginfo( 'name' ); ?> Logo" class="w-[120px]">
 		</a>
@@ -32,8 +34,6 @@
 	</div>
 
 </footer>
-
-</div>
 
 <?php wp_footer(); ?>
 

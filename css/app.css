@@ -532,11 +532,35 @@ video {
         max-width: 1280px
     }
 }
-@media (min-width: 1440px){
+@media (min-width: 1536px){
 
     .container{
-        max-width: 1440px
+        max-width: 1536px
     }
+}
+@media (min-width: 1920px){
+
+    .container{
+        max-width: 1920px
+    }
+}
+@media (min-width: 2500px){
+
+    .container{
+        max-width: 2500px
+    }
+}
+.absolute{
+    position: absolute
+}
+.relative{
+    position: relative
+}
+.bottom-0{
+    bottom: 0px
+}
+.right-0{
+    right: 0px
 }
 .m-8{
     margin: 2rem
@@ -586,6 +610,12 @@ video {
 .h-6{
     height: 1.5rem
 }
+.h-\[100vh\]{
+    height: 100vh
+}
+.h-\[50\%\]{
+    height: 50%
+}
 .h-full{
     height: 100%
 }
@@ -598,17 +628,14 @@ video {
 .w-6{
     width: 1.5rem
 }
-.w-full{
-    width: 100%
-}
-.w-\[142px\]{
-    width: 142px
-}
 .w-\[120px\]{
     width: 120px
 }
 .w-\[150px\]{
     width: 150px
+}
+.w-full{
+    width: 100%
 }
 .max-w-screen-xl{
     max-width: 1280px
@@ -643,14 +670,17 @@ video {
 .items-center{
     align-items: center
 }
-.justify-end{
-    justify-content: flex-end
+.justify-start{
+    justify-content: flex-start
 }
 .justify-center{
     justify-content: center
 }
 .justify-between{
     justify-content: space-between
+}
+.overflow-hidden{
+    overflow: hidden
 }
 .rounded{
     border-radius: 0.25rem
@@ -670,19 +700,12 @@ video {
 .border-b{
     border-bottom-width: 1px
 }
-.border-b-2{
-    border-bottom-width: 2px
-}
-.border-transparent{
-    border-color: transparent
-}
-.border-light-lavender{
-    --tw-border-opacity: 1;
-    border-color: rgb(217 218 226 / var(--tw-border-opacity))
-}
 .border-sage{
     --tw-border-opacity: 1;
     border-color: rgb(148 171 120 / var(--tw-border-opacity))
+}
+.border-transparent{
+    border-color: transparent
 }
 .bg-gray-100{
     --tw-bg-opacity: 1;
@@ -738,9 +761,6 @@ video {
 .py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem
-}
-.pb-2{
-    padding-bottom: 0.5rem
 }
 .pb-6{
     padding-bottom: 1.5rem
@@ -829,13 +849,13 @@ video {
     --tw-text-opacity: 1;
     color: rgb(111 120 146 / var(--tw-text-opacity))
 }
-.text-white{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity))
-}
 .text-sage{
     --tw-text-opacity: 1;
     color: rgb(148 171 120 / var(--tw-text-opacity))
+}
+.text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 .underline{
     text-decoration-line: underline
@@ -1083,8 +1103,8 @@ body{
         line-height: 1
     }
 
-    .lg\:text-6xl{
-        font-size: 3.75rem;
+    .lg\:text-7xl{
+        font-size: 4.5rem;
         line-height: 1
     }
 }

@@ -16,7 +16,6 @@ module.exports = {
 				DEFAULT: '1rem',
 				sm: '2rem',
 				lg: '0rem',
-				'3xl': '2rem',
 			},
 		},
 		extend: {
@@ -36,7 +35,9 @@ module.exports = {
 			md: '782px',
 			lg: tailpress.theme('settings.layout.contentSize', theme),
 			xl: tailpress.theme('settings.layout.wideSize', theme),
-			'2xl': '1440px',
+			'2xl': '1536px',
+			'3xl': '1920px',
+			'4xl': '2500px',
 		},
 	},
 	plugins: [tailpress.tailwind],
