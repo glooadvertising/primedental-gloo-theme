@@ -10,6 +10,16 @@
 	@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 }
 
+.wrapper {
+	display: grid;
+	grid-row: auto 1fr auto;
+}
+.main-menu ul li {
+	@apply flex;
+}
+.main-menu ul li a {
+	@apply w-full sm:w-auto flex-none text-lavender text-sm leading-6 font-light hover:font-bold uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-all duration-200;
+}
 .btn {
 	@apply w-full sm:w-auto flex-none bg-sage text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200;
 }

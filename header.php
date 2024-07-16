@@ -1,90 +1,29 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes();?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-	<?php wp_head(); ?>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?php bloginfo('name'); ?></title>
+	<?php wp_head();?>
 </head>
-
-<body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
-<?php do_action( 'tailpress_site_before' ); ?>
-
-<div id="page" class="min-h-screen flex flex-col">
-
-	<?php do_action( 'tailpress_header' ); ?>
-
-	<header>
-
-		<div class="mx-auto container">
-			<div class="lg:flex lg:justify-between lg:items-center py-6">
-				<div class="flex justify-between items-end w-full">
-					<div>
-						<?php if ( has_custom_logo() ) { ?>
-                            <?php the_custom_logo(); ?>
-						<?php } else { ?>
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
-								<img src="<?php echo get_template_directory_uri(); ?>/resources/images/prime-dental_logo.svg" alt="<?php echo get_bloginfo( 'name' ); ?> Logo" class="w-[150px]">
-							</a>
-
-							<p class="text-sm font-light text-gray-600">
-								<?php echo get_bloginfo( 'description' ); ?>
-							</p>
-
-						<?php } ?>
-					</div>
-					<a href="#" class="btn">Book appointment</a>
-					<div class="lg:hidden">
-						<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
-							<svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1"
-								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-									<g id="icon-shape">
-										<path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,9 L20,9 L20,11 L0,11 L0,9 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z"
-											  id="Combined-Shape"></path>
-									</g>
-								</g>
-							</svg>
-						</a>
-					</div>
+<body <?php body_class();?>>
+	<div class="wrapper min-h-screen auto-rows-[auto_1fr_auto]">
+		<section class="mx-8">
+			<header class="py-8 flex items-end justify-between">
+				<a href="<?php echo site_url('/'); ?>">
+					<img src="<?php echo get_template_directory_uri()?>/resources/images/prime-dental_logo.svg" alt="<?php bloginfo('name'); ?> Logo">
+				</a>
+				<div class="menu-group gap-3 hidden lg:flex">
+					<nav class="main-menu">
+						<ul class="flex">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				<a href="#" class="btn">Book appointment</a>
 				</div>
-
-				<?php
-				wp_nav_menu(
-					array(
-						'container_id'    => 'primary-menu',
-						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
-						'menu_class'      => 'lg:flex lg:-mx-4',
-						'theme_location'  => 'primary',
-						'li_class'        => 'lg:mx-4',
-						'fallback_cb'     => false,
-					)
-				);
-				?>
-			</div>
-		</div>
-	</header>
-
-	<div id="content" class="site-content flex flex-grow flex-1 h-[100vh]">
-
-		<?php if ( is_front_page() ) { ?>
-			<!-- Start introduction -->
-			<div class="container mx-auto flex items-center justify-center">
-				<div class="px-12 py-16 rounded-xl bg-light-lavender h-full w-full flex justify-start items-center relative overflow-hidden">
-                    <div class="flex max-w-screen-xl">
-                        <h1 class="text-3xl lg:text-7xl tracking-tight uppercase font-extralight text-lavender mb-6">Welcome to<br><?php bloginfo('name'); ?></h1>
-                    </div>
-					<svg viewBox="0 0 307 468" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 h-[50%]">
-						<path d="M307 0.0950855V468H233.909C105.311 468 0 362.743 0 234C0 105.257 105.216 0 233.909 0H307V0.0950855Z" fill="#6E7791"/>
-					</svg>
-
-                </div>
-			</div>
-			<!-- End introduction -->
-		<?php } ?>
-
-		<?php do_action( 'tailpress_content_start' ); ?>
-
-		<main>
+			</header>
+		</section>
+		<main class="mx-8">
