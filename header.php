@@ -7,7 +7,7 @@
 	<?php wp_head();?>
 </head>
 <body <?php body_class();?>>
-	<div class="wrapper min-h-screen auto-rows-[auto_1fr_auto]">
+	<div class="wrapper min-h-screen auto-rows-[auto_1fr]">
 		<section class="mx-8">
 			<header class="py-8 flex items-end justify-between">
 				<a href="<?php echo site_url('/'); ?>">
@@ -16,13 +16,13 @@
 				<div class="menu-group gap-3 hidden lg:flex">
 					<nav class="main-menu">
 						<ul class="flex">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="<?php echo site_url('/'); ?>">Home</a></li>
+						<li><a href="<?php echo site_url('/about'); ?>">About</a></li>
+						<li><a href="<?php echo site_url('/services'); ?>">Services</a></li>
+						<li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
 						</ul>
 					</nav>
-				<a href="#" class="btn">Book appointment</a>
+				<a href="https://primedental.dentr.net/" target="_blank" class="btn">Book appointment</a>
 				</div>
 			</header>
 		</section>

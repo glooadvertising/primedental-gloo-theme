@@ -1,6 +1,7 @@
 
 </main>
 
+</div>
 <footer id="colophon" class="mx-8 site-footer py-12" role="contentinfo">
 	<?php do_action( 'tailpress_footer' ); ?>
 
@@ -10,14 +11,14 @@
 		</a>
 
 		<!-- &copy; <?php echo date_i18n( 'Y' );?> - <?php echo get_bloginfo( 'name' );?> -->
-		<div class="flex flex-col items-end">
+		<div class="flex flex-col items-end gap-1">
 			<p>Mon - Thu 8.00am - 6.00pm   /   <a href="tel:(03) 6223 5514">(03) 6223 5514</a></p>
 			<p><a href="#">9 Gregory Street, Sandy Bay</a></p>
 			<p><a href="mailto:reception1@primedental.com.au" class="lowercase">reception1@primedental.com.au</a></p>
 
 		</div>
 	</div>
-	<div class="container mx-auto text-center text-sage text-xs flex justify-between uppercase pt-6">
+	<div class="text-sage text-xs flex justify-between uppercase pt-6">
 		<p><a href="#">Privacy Policy</a></p>
 		<div>
 			
@@ -26,7 +27,6 @@
 	</div>
 
 </footer>
-</div>
 
 <?php wp_footer(); ?>
 

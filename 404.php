@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
-</head>
-<body class="antialiased">
-	<div class="md:flex min-h-screen">
-		<div class="w-full md:w-1/2 flex items-center justify-center">
-			<div class="max-w-sm m-8">
-				<div class="text-5xl md:text-15xl text-gray-800 border-primary border-b">404</div>
-				<div class="w-16 h-1 bg-purple-light my-3 md:my-6"></div>
-				<p class="text-gray-800 text-2xl md:text-3xl font-light mb-8"><?php _e( 'Sorry, the page you are looking for could not be found.', 'tailpress' ); ?></p>
-				<a href="<?php echo get_bloginfo( 'url' ); ?>" class="bg-primary px-4 py-2 rounded text-white">
+<?php get_header(); ?>
+<div class="flex items-center justify-center h-full">
+	<div class="px-12 py-16 rounded-xl bg-light-lavender text-lavender h-full w-full flex justify-start items-center relative">
+		<div class="flex flex-col justify-start w-full lg:w-lg xl:w-xl mx-auto">
+			<h1 class="text-3xl lg:text-7xl tracking-tight uppercase font-extralight text-lavender mb-6">404</h1>
+			<div class="flex flex-col items-start page-content font-light gap-4">
+				<p class="text-2xl"><?php _e( 'Sorry, the page you are looking for could not be found.', 'tailpress' ); ?></p>
+				<a href="<?php echo get_bloginfo( 'url' ); ?>" class="btn">
 					<?php _e( 'Go Home', 'tailpress' ); ?>
 				</a>
-			</div>
+            </div>
 		</div>
+		<svg viewBox="0 0 307 468" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 h-[50%] fill-lavender">
+			<path d="M307 0.0950855V468H233.909C105.311 468 0 362.743 0 234C0 105.257 105.216 0 233.909 0H307V0.0950855Z"/>
+		</svg>
+
 	</div>
-</body>
-</html>
+</div>
+
+<?php get_footer(); ?>
