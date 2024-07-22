@@ -26,18 +26,75 @@ a {
 	@apply flex;
 }
 .main-menu ul li a {
-	@apply w-full sm:w-auto flex-none text-lavender text-sm leading-6 font-light hover:font-bold uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
+	@apply w-full sm:w-auto flex-none text-lavender text-sm leading-6 font-light hover:font-semibold hover:bg-light-lavender/10 uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
 }
 .btn {
-	@apply w-full sm:w-auto flex-none bg-sage hover:bg-lavender text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:outline-none transition-colors duration-200;
+	@apply sm:w-auto flex-none bg-sage hover:bg-lavender text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:outline-none transition-colors duration-200 hover:ring-1 ring-sage/50;
+}
+
+.wpforms-submit-container {
+	@apply flex justify-end;
+}
+
+#wpforms-submit-71.wpforms-submit {
+	opacity: 1 !important;
+	background-blend-mode: unset !important;
+}
+
+#wpforms-submit-71.wpforms-submit:focus::after {
+	border: none;
+}
+
+#wpforms-submit-71.wpforms-submit:hover {
+	background-color: #94ab78 !important;
+}
+
+#wpforms-submit-71.wpforms-submit {
+	@apply sm:w-auto flex-none bg-lavender hover:bg-sage text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:outline-none transition-colors duration-200 hover:ring-1 ring-sage/50;
+}
+
+.btn-inv {
+	@apply bg-lavender hover:bg-white/25 text-white hover:ring-1 ring-light-lavender/50;
 }
 
 .page-content p {
 	@apply pb-3;
 }
 
-.page-content h2 {
+.page-content h2.wp-block-heading {
 	@apply text-2xl uppercase font-normal mb-2;
+}
+
+.page-content h2.wp-block-heading:not(:first-child) {
+	@apply mt-8;
+}
+
+.page-content h3.wp-block-heading {
+	@apply text-xl uppercase font-bold mb-2;
+}
+
+.page-content h3.wp-block-heading:not(:first-child) {
+	@apply mt-4;
+}
+
+.page-content h4.wp-block-heading {
+	@apply text-sm uppercase font-extrabold mb-1;
+}
+
+.page-content ul.wp-block-list {
+	@apply list-disc mt-3 mb-4 pl-6;
+}
+
+.page-content ol.wp-block-list {
+	@apply list-decimal mt-3 mb-4  pl-6;
+}
+
+.left-col .page-content p a {
+	@apply !underline underline-offset-2 decoration-1;
+}
+
+.page-content .wp-block-table {
+	@apply mb-8;
 }
 
 .is-style-wide {
@@ -47,4 +104,57 @@ a {
 .sticky-position {
 	position: sticky;
 	top: 0;
+}
+
+/* FORM */
+
+.wpforms-field-container {
+	@apply grid gap-4 my-12;
+}
+
+.wpforms-container .wpforms-field {
+	@apply !p-0;
+}
+
+#wpforms-71-field_1,
+#wpforms-71-field_2,
+#wpforms-71-field_3,
+#wpforms-71-field_4 {
+	@apply py-3 px-4 rounded-sm uppercase placeholder:text-sage/50 text-lavender focus-within:placeholder:text-transparent border-0;
+}
+
+#wpforms-71-field_1,
+#wpforms-71-field_2,
+#wpforms-71-field_3 {
+	height: unset !important;
+}
+
+#wpforms-71-field_1:focus-visible,
+#wpforms-71-field_2:focus-visible,
+#wpforms-71-field_3:focus-visible,
+#wpforms-71-field_4:focus-visible {
+	outline: -webkit-focus-ring-color auto 1px;
+	--tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05) !important;
+	--tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color) !important;
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+	outline-color: #94ab78 !important;
+}
+
+#wpforms-71-field_1::placeholder,
+#wpforms-71-field_2::placeholder,
+#wpforms-71-field_3::placeholder,
+#wpforms-71-field_4::placeholder {
+	@apply !text-sage/50;
+}
+
+#wpforms-71-field_1:focus-within::placeholder,
+#wpforms-71-field_2:focus-within::placeholder,
+#wpforms-71-field_3:focus-within::placeholder,
+#wpforms-71-field_4:focus-within::placeholder {
+	@apply !text-transparent;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+	margin-top: 16px !important;
 }
