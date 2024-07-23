@@ -1664,6 +1664,11 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media (min-width: 782px){
 
+    .md\:mx-8{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     .md\:flex{
         display: flex;
     }

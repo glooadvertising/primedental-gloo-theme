@@ -15,7 +15,7 @@
 </head>
 <body <?php body_class();?>>
 	<div class="wrapper min-h-screen auto-rows-[auto_1fr]">
-		<section class="m-4 sm:mx-8">
+		<section class="m-4 md:mx-8">
 			<header class="py-8 flex items-end justify-between">
 			<?php get_template_part('template-parts/mobile-menu'); ?>
 				<a href="<?php echo site_url('/'); ?>">
@@ -35,4 +35,4 @@
 				<?php get_template_part('template-parts/burger'); ?>
 			</header>
 		</section>
-		<main class="m-4 sm:mx-8">
+		<main class="m-4 md:mx-8">
