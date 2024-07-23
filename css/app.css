@@ -559,23 +559,50 @@ video {
 .sticky{
     position: sticky;
 }
+.-left-full{
+    left: -100%;
+}
 .bottom-0{
     bottom: 0px;
 }
 .bottom-12{
     bottom: 3rem;
 }
+.bottom-4{
+    bottom: 1rem;
+}
 .left-0{
     left: 0px;
 }
+.left-4{
+    left: 1rem;
+}
 .right-0{
     right: 0px;
+}
+.right-4{
+    right: 1rem;
+}
+.right-full{
+    right: 100%;
 }
 .top-0{
     top: 0px;
 }
 .top-12{
     top: 3rem;
+}
+.top-4{
+    top: 1rem;
+}
+.z-10{
+    z-index: 10;
+}
+.m-auto{
+    margin: auto;
+}
+.m-4{
+    margin: 1rem;
 }
 .mx-0{
     margin-left: 0px;
@@ -597,29 +624,13 @@ video {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-.my-8{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.my-2{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-.mx-2{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-.my-3{
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-}
-.my-4{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 .my-5{
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+}
+.my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .mb-1{
     margin-bottom: 0.25rem;
@@ -645,15 +656,6 @@ video {
 .mt-4{
     margin-top: 1rem;
 }
-.mt-2{
-    margin-top: 0.5rem;
-}
-.ml-1{
-    margin-left: 0.25rem;
-}
-.ml-2{
-    margin-left: 0.5rem;
-}
 .block{
     display: block;
 }
@@ -675,6 +677,9 @@ video {
 .h-12{
     height: 3rem;
 }
+.h-3{
+    height: 0.75rem;
+}
 .h-\[33\%\]{
     height: 33%;
 }
@@ -693,6 +698,9 @@ video {
 .w-1\/2{
     width: 50%;
 }
+.w-1\/5{
+    width: 20%;
+}
 .w-12{
     width: 3rem;
 }
@@ -705,26 +713,17 @@ video {
 .w-6{
     width: 1.5rem;
 }
+.w-64{
+    width: 16rem;
+}
 .w-96{
     width: 24rem;
 }
 .w-full{
     width: 100%;
 }
-.w-32{
-    width: 8rem;
-}
-.w-36{
-    width: 9rem;
-}
-.w-1\/5{
-    width: 20%;
-}
-.w-auto{
-    width: auto;
-}
-.w-64{
-    width: 16rem;
+.max-w-xl{
+    max-width: 36rem;
 }
 .flex-1{
     flex: 1 1 0%;
@@ -743,15 +742,6 @@ video {
 }
 .auto-rows-\[auto_1fr\]{
     grid-auto-rows: auto 1fr;
-}
-.grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col{
     flex-direction: column;
@@ -792,19 +782,10 @@ video {
 .gap-8{
     gap: 2rem;
 }
-.gap-12{
-    gap: 3rem;
-}
-.overflow-auto{
-    overflow: auto;
-}
 .truncate{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-.text-wrap{
-    text-wrap: wrap;
 }
 .text-nowrap{
     text-wrap: nowrap;
@@ -812,14 +793,14 @@ video {
 .rounded{
     border-radius: 0.25rem;
 }
-.rounded-3xl{
-    border-radius: 1.5rem;
-}
 .rounded-full{
     border-radius: 9999px;
 }
 .rounded-lg{
     border-radius: 0.5rem;
+}
+.rounded-md{
+    border-radius: 0.375rem;
 }
 .rounded-sm{
     border-radius: 0.125rem;
@@ -827,24 +808,13 @@ video {
 .rounded-xl{
     border-radius: 0.75rem;
 }
-.rounded-md{
-    border-radius: 0.375rem;
-}
-.rounded-t-xl{
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-}
-.rounded-l-none{
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+.\!rounded-l-none{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
 }
 .rounded-r-full{
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
-}
-.\!rounded-l-none{
-    border-top-left-radius: 0px !important;
-    border-bottom-left-radius: 0px !important;
 }
 .rounded-bl-full{
     border-bottom-left-radius: 9999px;
@@ -863,9 +833,6 @@ video {
 }
 .border-current{
     border-color: currentColor;
-}
-.border-lavender\/25{
-    border-color: rgb(111 120 146 / 0.25);
 }
 .border-lavender\/50{
     border-color: rgb(111 120 146 / 0.5);
@@ -888,6 +855,9 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(111 120 146 / var(--tw-bg-opacity));
 }
+.bg-lavender\/90{
+    background-color: rgb(111 120 146 / 0.9);
+}
 .bg-light-lavender{
     --tw-bg-opacity: 1;
     background-color: rgb(217 218 226 / var(--tw-bg-opacity));
@@ -902,13 +872,6 @@ video {
 .bg-white\/25{
     background-color: rgb(255 255 255 / 0.25);
 }
-.bg-red-500{
-    --tw-bg-opacity: 1;
-    background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-.bg-cover{
-    background-size: cover;
-}
 .fill-lavender{
     fill: #6F7892;
 }
@@ -919,12 +882,19 @@ video {
 .p-12{
     padding: 3rem;
 }
+.p-24{
+    padding: 6rem;
+}
 .p-3{
     padding: 0.75rem;
 }
 .px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+}
+.px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .px-3{
     padding-left: 0.75rem;
@@ -962,10 +932,6 @@ video {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
 .pb-16{
     padding-bottom: 4rem;
 }
@@ -984,14 +950,11 @@ video {
 .pr-6{
     padding-right: 1.5rem;
 }
+.pt-16{
+    padding-top: 4rem;
+}
 .pt-6{
     padding-top: 1.5rem;
-}
-.pr-0{
-    padding-right: 0px;
-}
-.pl-6{
-    padding-left: 1.5rem;
 }
 .text-center{
     text-align: center;
@@ -1027,9 +990,6 @@ video {
     font-size: 0.75rem;
     line-height: 1rem;
 }
-.text-\[10px\]{
-    font-size: 10px;
-}
 .\!font-semibold{
     font-weight: 600 !important;
 }
@@ -1053,6 +1013,9 @@ video {
 }
 .font-semibold{
     font-weight: 600;
+}
+.\!uppercase{
+    text-transform: uppercase !important;
 }
 .uppercase{
     text-transform: uppercase;
@@ -1092,6 +1055,9 @@ video {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-white\/50{
+    color: rgb(255 255 255 / 0.5);
+}
 .\!underline{
     text-decoration-line: underline !important;
 }
@@ -1104,6 +1070,9 @@ video {
 .antialiased{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.\!opacity-0{
+    opacity: 0 !important;
 }
 .mix-blend-multiply{
     mix-blend-mode: multiply;
@@ -1118,19 +1087,6 @@ video {
 }
 .ring-white\/25{
     --tw-ring-color: rgb(255 255 255 / 0.25);
-}
-.ring-white{
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
-}
-.ring-offset-2{
-    --tw-ring-offset-width: 2px;
-}
-.ring-offset-transparent{
-    --tw-ring-offset-color: transparent;
-}
-.ring-offset-sage{
-    --tw-ring-offset-color: #94AB78;
 }
 .filter{
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1297,6 +1253,50 @@ a{
         width: auto;
     }
 }
+.mobile-menu ul li a{
+    display: block;
+    border-radius: 0.125rem;
+    border-width: 1px;
+    border-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    color: rgb(255 255 255 / 0.5);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+.mobile-menu ul li a:hover{
+    background-color: rgb(217 218 226 / 0.1);
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.mobile-menu ul li a:focus{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.menu-visible{
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.menu-hidden{
+    right: 100%;
+    left: -100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
 .btn{
     flex: none;
     border-top-left-radius: 9999px;
@@ -1450,6 +1450,11 @@ a{
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
 }
+.left-col .page-content p:first-child strong{
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 .page-content .wp-block-table{
     margin-bottom: 2rem;
 }
@@ -1463,6 +1468,16 @@ a{
 .sticky-position {
 	position: sticky;
 	top: 0;
+}
+dialog{
+    opacity: 0 !important;
+    transition-property: opacity !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
+}
+dialog[open]{
+    opacity: 1 !important;
+	pointer-events: inherit;
 }
 /* FORM */
 .wpforms-field-container{
@@ -1543,6 +1558,10 @@ a{
 div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	margin-top: 16px !important;
 }
+.wpforms-error{
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
 .placeholder\:text-sage::-moz-placeholder{
     --tw-text-opacity: 1;
     color: rgb(148 171 120 / var(--tw-text-opacity));
@@ -1556,6 +1575,9 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 .placeholder\:text-sage\/50::placeholder{
     color: rgb(148 171 120 / 0.5);
+}
+.backdrop\:bg-lavender\/50::backdrop{
+    background-color: rgb(111 120 146 / 0.5);
 }
 .focus-within\:outline-sage:focus-within{
     outline-color: #94AB78;
@@ -1583,37 +1605,23 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 .hover\:bg-white\/25:hover{
     background-color: rgb(255 255 255 / 0.25);
 }
-.hover\:text-center:hover{
-    text-align: center;
-}
 .hover\:font-medium:hover{
     font-weight: 500;
 }
 .hover\:font-semibold:hover{
     font-weight: 600;
 }
+.hover\:text-white:hover{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .hover\:ring-1:hover{
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-.hover\:ring-2:hover{
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-.hover\:ring-white:hover{
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
-}
 .hover\:ring-white\/25:hover{
     --tw-ring-color: rgb(255 255 255 / 0.25);
-}
-.hover\:ring-offset-2:hover{
-    --tw-ring-offset-width: 2px;
-}
-.hover\:ring-offset-sage:hover{
-    --tw-ring-offset-color: #94AB78;
 }
 .hover\:ring-offset-transparent:hover{
     --tw-ring-offset-color: transparent;
@@ -1632,10 +1640,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
-.group:hover .group-hover\:bg-lavender{
-    --tw-bg-opacity: 1;
-    background-color: rgb(111 120 146 / var(--tw-bg-opacity));
-}
 .group:hover .group-hover\:bg-white\/10{
     background-color: rgb(255 255 255 / 0.1);
 }
@@ -1645,6 +1649,11 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media (min-width: 600px){
 
+    .sm\:mx-8{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     .sm\:w-auto{
         width: auto;
     }
@@ -1652,19 +1661,11 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
     .sm\:grid-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
-    .sm\:gap-16{
-        gap: 4rem;
-    }
 }
 @media (min-width: 782px){
 
     .md\:flex{
         display: flex;
-    }
-
-    .md\:hidden{
-        display: none;
     }
 
     .md\:h-\[50\%\]{
@@ -1690,10 +1691,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .md\:pr-0{
         padding-right: 0px;
-    }
-
-    .md\:pl-12{
-        padding-left: 3rem;
     }
 
     .md\:text-3xl{
@@ -1723,14 +1720,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .lg\:flex-row{
-        flex-direction: row;
-    }
-
-    .lg\:text-wrap{
-        text-wrap: wrap;
-    }
-
     .lg\:py-36{
         padding-top: 9rem;
         padding-bottom: 9rem;
@@ -1751,14 +1740,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         position: sticky;
     }
 
-    .xl\:top-0{
-        top: 0px;
-    }
-
-    .xl\:top-12{
-        top: 3rem;
-    }
-
     .xl\:top-6{
         top: 1.5rem;
     }
@@ -1771,36 +1752,12 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         display: flex;
     }
 
-    .xl\:w-96{
-        width: 24rem;
-    }
-
-    .xl\:w-32{
-        width: 8rem;
-    }
-
-    .xl\:w-36{
-        width: 9rem;
-    }
-
-    .xl\:w-44{
-        width: 11rem;
-    }
-
-    .xl\:w-52{
-        width: 13rem;
-    }
-
     .xl\:w-1\/4{
         width: 25%;
     }
 
     .xl\:w-1\/5{
         width: 20%;
-    }
-
-    .xl\:w-1\/6{
-        width: 16.666667%;
     }
 
     .xl\:flex-1{
@@ -1815,18 +1772,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         align-items: flex-start;
     }
 
-    .xl\:justify-start{
-        justify-content: flex-start;
-    }
-
-    .xl\:justify-end{
-        justify-content: flex-end;
-    }
-
-    .xl\:gap-8{
-        gap: 2rem;
-    }
-
     .xl\:gap-12{
         gap: 3rem;
     }
@@ -1834,28 +1779,12 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
     .xl\:gap-16{
         gap: 4rem;
     }
-
-    .xl\:text-wrap{
-        text-wrap: wrap;
-    }
-
-    .xl\:text-nowrap{
-        text-wrap: nowrap;
-    }
-
-    .xl\:text-right{
-        text-align: right;
-    }
 }
 @media (min-width: 1536px){
 
     .\32xl\:mx-12{
         margin-left: 3rem;
         margin-right: 3rem;
-    }
-
-    .\32xl\:ml-12{
-        margin-left: 3rem;
     }
 
     .\32xl\:flex-row{
@@ -1873,24 +1802,12 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
     .\32xl\:text-wrap{
         text-wrap: wrap;
     }
-
-    .\32xl\:text-nowrap{
-        text-wrap: nowrap;
-    }
 }
 @media (min-width: 1920px){
 
     .\33xl\:mx-48{
         margin-left: 12rem;
         margin-right: 12rem;
-    }
-
-    .\33xl\:ml-48{
-        margin-left: 12rem;
-    }
-
-    .\33xl\:text-wrap{
-        text-wrap: wrap;
     }
 }
 

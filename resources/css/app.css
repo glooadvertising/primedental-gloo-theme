@@ -28,6 +28,19 @@ a {
 .main-menu ul li a {
 	@apply w-full sm:w-auto flex-none text-lavender text-sm leading-6 font-light hover:font-semibold hover:bg-light-lavender/10 uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
 }
+
+.mobile-menu ul li a {
+	@apply block text-white/50 hover:text-white text-sm leading-6 font-light hover:font-semibold hover:bg-light-lavender/10 uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
+}
+
+.menu-visible {
+	@apply top-4 right-4 bottom-4 left-4 transition-all;
+}
+
+.menu-hidden {
+	@apply right-full -left-full transition-all;
+}
+
 .btn {
 	@apply sm:w-auto flex-none bg-sage hover:bg-lavender text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:outline-none transition-colors duration-200 hover:ring-1 ring-sage/50;
 }
@@ -93,6 +106,10 @@ a {
 	@apply !underline underline-offset-2 decoration-1;
 }
 
+.left-col .page-content p:first-child strong {
+	@apply uppercase font-light text-xl;
+}
+
 .page-content .wp-block-table {
 	@apply mb-8;
 }
@@ -104,6 +121,15 @@ a {
 .sticky-position {
 	position: sticky;
 	top: 0;
+}
+
+dialog {
+	@apply !opacity-0 !transition-opacity;
+}
+
+dialog[open] {
+	@apply !opacity-100;
+	pointer-events: inherit;
 }
 
 /* FORM */
@@ -157,4 +183,8 @@ a {
 
 div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	margin-top: 16px !important;
+}
+
+.wpforms-error {
+	@apply !uppercase !font-bold;
 }

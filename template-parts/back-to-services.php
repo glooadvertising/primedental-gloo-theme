@@ -1,1 +1,1 @@
-<a href="<?php echo site_url('/services'); ?>" class="btn lg:hidden !rounded-l-none rounded-r-full absolute left-0 bottom-12">Back to services</a>
+<a href="<?php echo site_url('/services'); ?>" class="btn lg:hidden !rounded-l-none rounded-r-full absolute left-0 bottom-12 flex items-center gap-4"><img src="<?php echo get_template_directory_uri(); ?>/resources/images/arrow-back.png" alt="Up" class="h-3">Back to services</a>

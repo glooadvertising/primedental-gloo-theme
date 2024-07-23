@@ -1,1 +1,1 @@
-<a href="#top" class="btn btn-inv absolute right-0 bottom-12">Back to top</a>
+<a href="#top" class="btn btn-inv absolute right-0 bottom-12 flex items-center gap-4"><img src="<?php echo get_template_directory_uri(); ?>/resources/images/arrow-up.png" alt="Up" class="h-3">Top</a>

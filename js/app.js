@@ -7,15 +7,38 @@
   \*****************************/
 /***/ (() => {
 
-// Navigation toggle
-window.addEventListener('load', function () {
-  var main_navigation = document.querySelector('#primary-menu');
-  document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {
-    e.preventDefault();
-    main_navigation.classList.toggle('hidden');
+// PROFILE CARDS
+
+var articles = document.querySelectorAll('.profile-card');
+var _loop = function _loop() {
+  var modal = articles[i].querySelector('dialog');
+  var closeModal = articles[i].querySelector('.close-button');
+  articles[i].addEventListener('click', function () {
+    modal.showModal();
   });
+  closeModal.addEventListener('click', function (e) {
+    modal.close();
+    e.stopPropagation();
+  });
+};
+for (var i = 0; i < articles.length; i++) {
+  _loop();
+}
+
+// MOBILE MENU
+
+var mobileMenu = document.querySelector('#mobile-menu');
+var burger = document.querySelector('.burger');
+var close = document.querySelector('#closeMobileMenu');
+burger.addEventListener('click', function () {
+  mobileMenu.classList.toggle('menu-hidden');
+});
+close.addEventListener('click', function () {
+  mobileMenu.classList.toggle('menu-hidden');
 });
 
+// Navigation toggle
+//
 // jQuery(document).ready(function ($) {
 // 	// Cache selectors
 // 	var leftMenu = $('.side-menu'),

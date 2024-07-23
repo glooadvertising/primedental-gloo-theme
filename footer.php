@@ -2,7 +2,7 @@
 </main>
 
 </div>
-<footer id="colophon" class="mx-8 site-footer py-12" role="contentinfo">
+<footer id="colophon" class="m-4 sm:mx-8 site-footer py-12" role="contentinfo">
 	<?php do_action( 'tailpress_footer' ); ?>
 
 	<div class="pb-6 text-center text-lavender text-xs flex justify-between uppercase border-b border-sage">
