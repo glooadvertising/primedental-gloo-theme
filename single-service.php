@@ -11,7 +11,7 @@
         <?php } ?>
 		<div class="flex w-full lg:w-lg xl:w-xl mx-auto gap-8 xl:gap-16 relative text-inherit">
 			<div class="relative left-col flex flex-col 2xl:flex-row 2xl:items-start 2xl:gap-12 flex-1 text-inherit mx-0">
-                <h1 class="flex text-3xl text-nowrap uppercase font-normal mb-6 xl:w-1/4 xl:sticky xl:top-6 2xl:text-wrap"><?php the_title();?></h1>
+                <h1 class="flex text-3xl text-wrap lg:text-nowrap xl:text-wrap uppercase font-normal mb-6 xl:w-1/4 xl:sticky xl:top-6"><?php the_title();?></h1>
                 <div class="page-content font-light xl:flex-1">
                     <?php the_content(); ?>
                 </div>

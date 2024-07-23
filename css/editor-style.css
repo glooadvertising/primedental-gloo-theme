@@ -305,6 +305,9 @@
     text-overflow: ellipsis;
     white-space: nowrap
 }
+.text-wrap {
+    text-wrap: wrap
+}
 .text-nowrap {
     text-wrap: nowrap
 }
@@ -843,6 +846,9 @@ body {
     .lg\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr))
     }
+    .lg\:text-nowrap {
+        text-wrap: nowrap
+    }
     .lg\:py-36 {
         padding-top: 9rem;
         padding-bottom: 9rem
@@ -888,6 +894,12 @@ body {
     }
     .xl\:gap-16 {
         gap: 4rem
+    }
+    .xl\:text-wrap {
+        text-wrap: wrap
+    }
+    .xl\:text-nowrap {
+        text-wrap: nowrap
     }
 }
 @media (min-width: 1536px) {
