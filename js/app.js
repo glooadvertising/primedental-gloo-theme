@@ -16,10 +16,10 @@ var _loop = function _loop() {
   articles[i].addEventListener('click', function () {
     modal.showModal();
   });
-  closeModal.addEventListener('click', function (e) {
-    modal.close();
-    e.stopPropagation();
-  });
+  // closeModal.addEventListener('click', (e) => {
+  // 	modal.close();
+  // 	e.stopPropagation();
+  // });
 };
 for (var i = 0; i < articles.length; i++) {
   _loop();
@@ -29,11 +29,11 @@ for (var i = 0; i < articles.length; i++) {
 
 var mobileMenu = document.querySelector('#mobile-menu');
 var burger = document.querySelector('.burger');
-var close = document.querySelector('#closeMobileMenu');
+var closeMenu = document.querySelector('#closeMobileMenu');
 burger.addEventListener('click', function () {
   mobileMenu.classList.toggle('menu-hidden');
 });
-close.addEventListener('click', function () {
+closeMenu.addEventListener('click', function () {
   mobileMenu.classList.toggle('menu-hidden');
 });
 

@@ -8,23 +8,23 @@ for (let i = 0; i < articles.length; i++) {
 	articles[i].addEventListener('click', () => {
 		modal.showModal();
 	});
-	closeModal.addEventListener('click', (e) => {
-		modal.close();
-		e.stopPropagation();
-	});
+	// closeModal.addEventListener('click', (e) => {
+	// 	modal.close();
+	// 	e.stopPropagation();
+	// });
 }
 
 // MOBILE MENU
 
 const mobileMenu = document.querySelector('#mobile-menu');
 const burger = document.querySelector('.burger');
-const close = document.querySelector('#closeMobileMenu');
+const closeMenu = document.querySelector('#closeMobileMenu');
 
 burger.addEventListener('click', () => {
 	mobileMenu.classList.toggle('menu-hidden');
 });
 
-close.addEventListener('click', () => {
+closeMenu.addEventListener('click', () => {
 	mobileMenu.classList.toggle('menu-hidden');
 });
 
