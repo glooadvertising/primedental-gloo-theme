@@ -598,19 +598,15 @@ video {
 .z-10{
     z-index: 10;
 }
-.m-auto{
-    margin: auto;
-}
 .m-4{
     margin: 1rem;
+}
+.m-auto{
+    margin: auto;
 }
 .mx-0{
     margin-left: 0px;
     margin-right: 0px;
-}
-.mx-8{
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 .mx-auto{
     margin-left: auto;
@@ -631,6 +627,10 @@ video {
 .my-8{
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .mb-1{
     margin-bottom: 0.25rem;
@@ -691,6 +691,9 @@ video {
 }
 .h-full{
     height: 100%;
+}
+.h-auto{
+    height: auto;
 }
 .min-h-screen{
     min-height: 100vh;
@@ -789,9 +792,6 @@ video {
 }
 .text-wrap{
     text-wrap: wrap;
-}
-.text-nowrap{
-    text-wrap: nowrap;
 }
 .rounded{
     border-radius: 0.25rem;
@@ -1265,7 +1265,7 @@ a{
     padding-bottom: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 1.5rem;
@@ -1652,20 +1652,37 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media (min-width: 600px){
 
-    .sm\:mx-8{
-        margin-left: 2rem;
-        margin-right: 2rem;
+    .sm\:m-auto{
+        margin: auto;
+    }
+
+    .sm\:mx-auto{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sm\:w-auto{
         width: auto;
     }
 
+    .sm\:max-w-sm{
+        max-width: 24rem;
+    }
+
     .sm\:grid-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .sm\:text-3xl{
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
 }
 @media (min-width: 782px){
+
+    .md\:m-auto{
+        margin: auto;
+    }
 
     .md\:mx-8{
         margin-left: 2rem;
@@ -1678,6 +1695,18 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .md\:h-\[50\%\]{
         height: 50%;
+    }
+
+    .md\:max-w-md{
+        max-width: 28rem;
+    }
+
+    .md\:max-w-xl{
+        max-width: 36rem;
+    }
+
+    .md\:max-w-2xl{
+        max-width: 42rem;
     }
 
     .md\:grid-cols-2{
@@ -1708,6 +1737,19 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media (min-width: 960px){
 
+    .lg\:m-auto{
+        margin: auto;
+    }
+
+    .lg\:mx-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lg\:mt-auto{
+        margin-top: auto;
+    }
+
     .lg\:flex{
         display: flex;
     }
@@ -1718,6 +1760,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .lg\:w-36{
         width: 9rem;
+    }
+
+    .lg\:max-w-lg{
+        max-width: 32rem;
     }
 
     .lg\:flex-1{
@@ -1772,6 +1818,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         width: 20%;
     }
 
+    .xl\:max-w-xl{
+        max-width: 36rem;
+    }
+
     .xl\:flex-1{
         flex: 1 1 0%;
     }
@@ -1795,10 +1845,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
     .xl\:text-wrap{
         text-wrap: wrap;
     }
-
-    .xl\:text-nowrap{
-        text-wrap: nowrap;
-    }
 }
 @media (min-width: 1536px){
 
@@ -1817,10 +1863,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .\32xl\:gap-12{
         gap: 3rem;
-    }
-
-    .\32xl\:text-wrap{
-        text-wrap: wrap;
     }
 }
 @media (min-width: 1920px){

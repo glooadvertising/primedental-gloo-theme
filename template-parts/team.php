@@ -24,7 +24,7 @@
                 <div class="profile-info w-full grid px-2">
                     <h1 class="font-bold uppercase mt-3 text-sm"><?php the_title(); ?></h1>
                     <p class="uppercase text-xs"><?php the_field('role')?></p>
-                    <dialog id="<?php the_ID(); ?>" class="page-content px-12 pt-16 p-24 m-auto rounded-lg max-w-xl bg-light-lavender text-lavender backdrop:bg-lavender/50"> 
+                    <dialog id="<?php the_ID(); ?>" class="page-content px-4 md:px-12 pt-16 p-24 mt-4 lg:m-auto m-auto rounded-lg max-w-['calc(100% - 4rem)'] md:max-w-2xl bg-light-lavender text-lavender backdrop:bg-lavender/50"> 
                         <span>
                         <h1 class="font-bold uppercase mt-3 text-md"><?php the_title(); ?></h1>
                         <p class="uppercase text-xs"><?php the_field('role')?></p>
@@ -69,7 +69,7 @@
                 <div class="profile-info w-full grid px-2">
                     <h1 class="font-bold uppercase mt-3 text-sm"><?php the_title(); ?></h1>
                     <p class="uppercase text-xs"><?php the_field('role')?></p>
-                    <dialog id="<?php the_ID(); ?>" class="page-content px-12 pt-16 p-24 m-auto rounded-lg max-w-xl bg-light-lavender text-lavender backdrop:bg-lavender/50"> 
+                    <dialog id="<?php the_ID(); ?>" class="page-content px-12 pt-16 p-24 top-4 m-auto rounded-lg max-w-['calc(100% - 4rem)'] md:max-w-2xl bg-light-lavender text-lavender backdrop:bg-lavender/50"> 
                         <span>
                         <h1 class="font-bold uppercase mt-3 text-md"><?php the_title(); ?></h1>
                         <p class="uppercase text-xs"><?php the_field('role')?></p>
@@ -116,7 +116,7 @@
                 <div class="profile-info w-full grid px-2">
                     <h1 class="font-bold uppercase mt-3 text-sm"><?php the_title(); ?></h1>
                     <p class="uppercase text-xs"><?php the_field('role')?></p>
-                    <dialog id="<?php the_ID(); ?>" class="page-content px-12 pt-16 p-24 m-auto rounded-lg max-w-xl bg-light-lavender text-lavender backdrop:bg-lavender/50"> 
+                    <dialog id="<?php the_ID(); ?>" class="page-content px-12 pt-16 p-24 top-4 m-auto rounded-lg max-w-['calc(100% - 4rem)'] md:max-w-2xl bg-light-lavender text-lavender backdrop:bg-lavender/50"> 
                         <span>
                         <h1 class="font-bold uppercase mt-3 text-md"><?php the_title(); ?></h1>
                         <p class="uppercase text-xs"><?php the_field('role')?></p>

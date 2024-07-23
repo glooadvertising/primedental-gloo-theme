@@ -30,7 +30,7 @@ a {
 }
 
 .mobile-menu ul li a {
-	@apply block text-white/50 hover:text-white text-sm leading-6 font-light hover:font-semibold hover:bg-light-lavender/10 uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
+	@apply block text-white/50 hover:text-white text-xl leading-6 font-light hover:font-semibold hover:bg-light-lavender/10 uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
 }
 
 .menu-visible {

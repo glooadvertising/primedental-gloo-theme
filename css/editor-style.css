@@ -144,6 +144,10 @@
     margin-top: 2rem;
     margin-bottom: 2rem
 }
+.mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem
+}
 .mb-1 {
     margin-bottom: 0.25rem
 }
@@ -203,6 +207,9 @@
 }
 .h-full {
     height: 100%
+}
+.h-auto {
+    height: auto
 }
 .min-h-screen {
     min-height: 100vh
@@ -784,18 +791,35 @@ body {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 @media (min-width: 600px) {
+    .sm\:m-auto {
+        margin: auto
+    }
     .sm\:mx-8 {
         margin-left: 2rem;
         margin-right: 2rem
     }
+    .sm\:mx-auto {
+        margin-left: auto;
+        margin-right: auto
+    }
     .sm\:w-auto {
         width: auto
+    }
+    .sm\:max-w-sm {
+        max-width: 24rem
     }
     .sm\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr))
     }
+    .sm\:text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem
+    }
 }
 @media (min-width: 782px) {
+    .md\:m-auto {
+        margin: auto
+    }
     .md\:mx-8 {
         margin-left: 2rem;
         margin-right: 2rem
@@ -808,6 +832,15 @@ body {
     }
     .md\:h-\[50\%\] {
         height: 50%
+    }
+    .md\:max-w-md {
+        max-width: 28rem
+    }
+    .md\:max-w-xl {
+        max-width: 36rem
+    }
+    .md\:max-w-2xl {
+        max-width: 42rem
     }
     .md\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr))
@@ -831,6 +864,16 @@ body {
     }
 }
 @media (min-width: 960px) {
+    .lg\:m-auto {
+        margin: auto
+    }
+    .lg\:mx-auto {
+        margin-left: auto;
+        margin-right: auto
+    }
+    .lg\:mt-auto {
+        margin-top: auto
+    }
     .lg\:flex {
         display: flex
     }
@@ -839,6 +882,9 @@ body {
     }
     .lg\:w-36 {
         width: 9rem
+    }
+    .lg\:max-w-lg {
+        max-width: 32rem
     }
     .lg\:flex-1 {
         flex: 1 1 0%
@@ -879,6 +925,9 @@ body {
     }
     .xl\:w-1\/5 {
         width: 20%
+    }
+    .xl\:max-w-xl {
+        max-width: 36rem
     }
     .xl\:flex-1 {
         flex: 1 1 0%
