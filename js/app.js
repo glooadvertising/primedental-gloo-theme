@@ -7,24 +7,6 @@
   \*****************************/
 /***/ (() => {
 
-// PROFILE CARDS
-
-var articles = document.querySelectorAll('.profile-card');
-var _loop = function _loop() {
-  var modal = articles[i].querySelector('dialog');
-  var closeModal = articles[i].querySelector('.close-button');
-  articles[i].addEventListener('click', function () {
-    modal.showModal();
-  });
-  // closeModal.addEventListener('click', (e) => {
-  // 	modal.close();
-  // 	e.stopPropagation();
-  // });
-};
-for (var i = 0; i < articles.length; i++) {
-  _loop();
-}
-
 // MOBILE MENU
 
 var mobileMenu = document.querySelector('#mobile-menu');
@@ -36,6 +18,25 @@ burger.addEventListener('click', function () {
 closeMenu.addEventListener('click', function () {
   mobileMenu.classList.toggle('menu-hidden');
 });
+
+// PROFILE CARDS
+
+var articles = document.querySelectorAll('.profile-card');
+var _loop = function _loop() {
+  var _articles$i;
+  var modal = articles[i].querySelector('dialog');
+  var closeModal = articles[i].querySelector('.close-button');
+  (_articles$i = articles[i]) === null || _articles$i === void 0 || _articles$i.addEventListener('click', function () {
+    modal.showModal();
+  });
+  closeModal === null || closeModal === void 0 || closeModal.addEventListener('click', function (e) {
+    modal.close();
+    e.stopPropagation();
+  });
+};
+for (var i = 0; i < articles.length; i++) {
+  _loop();
+}
 
 // Navigation toggle
 //

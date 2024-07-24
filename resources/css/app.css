@@ -34,11 +34,11 @@ a {
 }
 
 .menu-visible {
-	@apply top-4 right-4 bottom-4 left-4 transition-all;
+	@apply fixed top-4 right-4 bottom-4 left-4 transition-all;
 }
 
 .menu-hidden {
-	@apply right-full -left-full transition-all;
+	@apply absolute right-full -left-full transition-all;
 }
 
 .btn {

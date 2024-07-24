@@ -550,6 +550,9 @@ video {
         max-width: 2500px;
     }
 }
+.fixed{
+    position: fixed;
+}
 .absolute{
     position: absolute;
 }
@@ -628,10 +631,6 @@ video {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.mx-4{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
 .mb-1{
     margin-bottom: 0.25rem;
 }
@@ -692,12 +691,6 @@ video {
 .h-full{
     height: 100%;
 }
-.h-auto{
-    height: auto;
-}
-.max-h-full{
-    max-height: 100%;
-}
 .\!max-h-full{
     max-height: 100% !important;
 }
@@ -730,9 +723,6 @@ video {
 }
 .w-full{
     width: 100%;
-}
-.max-w-xl{
-    max-width: 36rem;
 }
 .flex-1{
     flex: 1 1 0%;
@@ -1291,6 +1281,7 @@ a{
     outline-offset: 2px;
 }
 .menu-visible{
+    position: fixed;
     top: 1rem;
     right: 1rem;
     bottom: 1rem;
@@ -1300,6 +1291,7 @@ a{
     transition-duration: 150ms;
 }
 .menu-hidden{
+    position: absolute;
     right: 100%;
     left: -100%;
     transition-property: all;
@@ -1658,21 +1650,8 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media (min-width: 600px){
 
-    .sm\:m-auto{
-        margin: auto;
-    }
-
-    .sm\:mx-auto{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .sm\:w-auto{
         width: auto;
-    }
-
-    .sm\:max-w-sm{
-        max-width: 24rem;
     }
 
     .sm\:grid-cols-2{
@@ -1686,10 +1665,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media (min-width: 782px){
 
-    .md\:m-auto{
-        margin: auto;
-    }
-
     .md\:mx-8{
         margin-left: 2rem;
         margin-right: 2rem;
@@ -1701,14 +1676,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .md\:h-\[50\%\]{
         height: 50%;
-    }
-
-    .md\:max-w-md{
-        max-width: 28rem;
-    }
-
-    .md\:max-w-xl{
-        max-width: 36rem;
     }
 
     .md\:max-w-2xl{
@@ -1747,15 +1714,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         margin: auto;
     }
 
-    .lg\:mx-auto{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .lg\:mt-auto{
-        margin-top: auto;
-    }
-
     .lg\:flex{
         display: flex;
     }
@@ -1766,10 +1724,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .lg\:w-36{
         width: 9rem;
-    }
-
-    .lg\:max-w-lg{
-        max-width: 32rem;
     }
 
     .lg\:flex-1{
@@ -1822,10 +1776,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .xl\:w-1\/5{
         width: 20%;
-    }
-
-    .xl\:max-w-xl{
-        max-width: 36rem;
     }
 
     .xl\:flex-1{

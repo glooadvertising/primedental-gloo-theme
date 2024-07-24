@@ -1,19 +1,3 @@
-// PROFILE CARDS
-
-const articles = document.querySelectorAll('.profile-card');
-
-for (let i = 0; i < articles.length; i++) {
-	const modal = articles[i].querySelector('dialog');
-	const closeModal = articles[i].querySelector('.close-button');
-	articles[i].addEventListener('click', () => {
-		modal.showModal();
-	});
-	// closeModal.addEventListener('click', (e) => {
-	// 	modal.close();
-	// 	e.stopPropagation();
-	// });
-}
-
 // MOBILE MENU
 
 const mobileMenu = document.querySelector('#mobile-menu');
@@ -27,6 +11,22 @@ burger.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
 	mobileMenu.classList.toggle('menu-hidden');
 });
+
+// PROFILE CARDS
+
+const articles = document.querySelectorAll('.profile-card');
+
+for (let i = 0; i < articles.length; i++) {
+	const modal = articles[i].querySelector('dialog');
+	const closeModal = articles[i].querySelector('.close-button');
+	articles[i]?.addEventListener('click', () => {
+		modal.showModal();
+	});
+	closeModal?.addEventListener('click', (e) => {
+		modal.close();
+		e.stopPropagation();
+	});
+}
 
 // Navigation toggle
 //

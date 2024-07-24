@@ -1,4 +1,4 @@
-<div id="mobile-menu" class="menu-visible menu-hidden absolute flex items-center justify-center bg-lavender/90 text-white z-10 rounded-xl lg:hidden">
+<div id="mobile-menu" class="menu-visible menu-hidden flex items-center justify-center bg-lavender/90 text-white z-10 rounded-xl lg:hidden">
     <nav class="mobile-menu">
         <ul class="grid uppercase 2xl">
             <li><a href="<?php echo site_url('/'); ?>" class="<?php echo $slug == '' ? '!font-semibold' : null; ?>">Home</a></li>
