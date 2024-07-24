@@ -75,7 +75,7 @@
                         <p class="uppercase text-xs"><?php the_field('role')?></p>
                         </span>
                         <?php the_content(); ?>
-                        <button class="close-button btn absolute right-0" type="button">Close</button>
+                        <button class="close-button btn absolute right-0" type="button" onclick=closeModal()>Close</button>
                     </dialog>
                 </div>
             </article>
@@ -122,7 +122,7 @@
                         <p class="uppercase text-xs"><?php the_field('role')?></p>
                         </span>
                         <?php the_content(); ?>
-                        <button class="close-button btn absolute right-0" type="button">Close</button>
+                        <button class="close-button btn absolute right-0" type="button" onclick=closeModal()>Close</button>
                     </dialog>
                 </div>
             </article>
