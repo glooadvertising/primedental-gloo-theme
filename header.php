@@ -16,7 +16,7 @@
 <body <?php body_class();?>>
 	<div class="wrapper min-h-screen auto-rows-[auto_1fr]">
 		<section class="m-4 md:mx-8">
-			<header class="py-8 flex items-end justify-between">
+			<header class="pt-8 flex items-end justify-between">
 			<?php get_template_part('template-parts/mobile-menu'); ?>
 				<a href="<?php echo site_url('/'); ?>">
 					<img src="<?php echo get_template_directory_uri()?>/resources/images/prime-dental_logo.svg" alt="<?php bloginfo('name'); ?> Logo" class=" w-28 lg:w-36">
