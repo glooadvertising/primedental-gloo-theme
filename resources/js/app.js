@@ -28,6 +28,14 @@ for (let i = 0; i < articles.length; i++) {
 	});
 }
 
+// HOME HERO
+
+const welcomeAlt = document.querySelector('#secondary-welcome');
+
+welcomeAlt.addEventListener('mouseover', () => {
+	welcomeAlt.classList.remove('opacity-0');
+});
+
 // Navigation toggle
 //
 // jQuery(document).ready(function ($) {

@@ -38,6 +38,13 @@ for (var i = 0; i < articles.length; i++) {
   _loop();
 }
 
+// HOME HERO
+
+var welcomeAlt = document.querySelector('#secondary-welcome');
+welcomeAlt.addEventListener('mouseover', function () {
+  welcomeAlt.classList.remove('opacity-0');
+});
+
 // Navigation toggle
 //
 // jQuery(document).ready(function ($) {
