@@ -5,7 +5,7 @@
 ?>
 
 <div class="flex items-center justify-center h-full">
-	<div class="px-6 md:px-12 py-24 pb-36 lg:py-36 rounded-xl <?php echo is_page($pages) ? 'bg-light-lavender text-lavender' : 'bg-sage text-white'; ?> h-full <?php echo get_field('show_sidebar') ? 'md:pr-0' : 'w-full'; ?> flex flex-col justify-start items-start relative">
+	<div class="px-4 md:px-12 py-24 pb-36 lg:py-36 rounded-xl <?php echo is_page($pages) ? 'bg-light-lavender text-lavender' : 'bg-sage text-white'; ?> h-full <?php echo get_field('show_sidebar') ? 'md:pr-0' : 'w-full'; ?> flex flex-col justify-start items-start relative">
         <?php global $post; if ( is_page() && $post->post_parent ) { ?>
             <?php get_template_part('template-parts/breadcrumbs'); ?>
         <?php } ?>
@@ -20,7 +20,7 @@
                             <!--?php get_template_part('template-parts/contact-form'); ?-->
                         </div>
                     </div>
-                    <div class="p-12 pb-16 bg-white/10 rounded-lg info-container flex flex-col gap-8 text-inherit font-light sticky top-0 ring-1 ring-white/25">
+                    <div class="px-4 pt-12 md:p-12 pb-16 bg-white/10 rounded-lg info-container flex flex-col gap-8 text-inherit font-light sticky top-0 ring-1 ring-white/25">
                         <div class="page-content pb-8 border-b border-white/50">
                             <h2 class="text-xl uppercase font-semibold mb-2">Contact Details</h2>
                             <div class="flex flex-col">
