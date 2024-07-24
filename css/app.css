@@ -1753,6 +1753,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         height: 50%;
     }
 
+    .md\:w-32{
+        width: 8rem;
+    }
+
     .md\:max-w-2xl{
         max-width: 42rem;
     }
