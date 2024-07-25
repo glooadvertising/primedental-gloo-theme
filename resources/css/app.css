@@ -132,6 +132,10 @@ dialog[open] {
 	pointer-events: inherit;
 }
 
+body:has(dialog[open]) {
+	overflow: hidden;
+}
+
 /* FORM */
 
 .wpforms-field-container {

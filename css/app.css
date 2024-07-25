@@ -1513,6 +1513,9 @@ dialog[open]{
     opacity: 1 !important;
 	pointer-events: inherit;
 }
+body:has(dialog[open]) {
+	overflow: hidden;
+}
 /* FORM */
 .wpforms-field-container{
     margin-top: 3rem;
