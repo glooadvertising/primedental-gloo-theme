@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="main-welcome" class="flex items-center justify-center h-full relative z-10">
+<div id="main-welcome" class="flex items-center justify-center h-full min-h-[800px] relative z-10">
 	<div class="px-6 sm:px-12 py-16 rounded-xl bg-light-lavender h-full w-full flex justify-start items-center relative">
 		<div class="flex w-full lg:w-lg xl:w-xl mx-auto 2xl:mx-12 3xl:mx-48">
 			<h1 class="text-5xl lg:text-7xl uppercase font-extralight text-lavender mb-6">Welcome to <br class="hidden sm:block"><?php bloginfo('name'); ?></h1>

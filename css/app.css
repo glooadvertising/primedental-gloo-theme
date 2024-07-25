@@ -703,6 +703,12 @@ video {
 .min-h-screen{
     min-height: 100vh;
 }
+.min-h-full{
+    min-height: 100%;
+}
+.min-h-\[800px\]{
+    min-height: 800px;
+}
 .w-1\/2{
     width: 50%;
 }
