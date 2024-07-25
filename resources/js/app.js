@@ -21,7 +21,7 @@ for (let i = 0; i < articles.length; i++) {
 	const closeModal = articles[i].querySelector('.close-button');
 	articles[i]?.addEventListener('click', () => {
 		modal.showModal();
-		modal.scrollTop = 0;
+		modal.scrollTo({ top: 0 });
 	});
 	closeModal?.addEventListener('click', (e) => {
 		modal.close();
