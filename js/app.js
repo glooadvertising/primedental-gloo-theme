@@ -25,10 +25,10 @@ var articles = document.querySelectorAll('.profile-card');
 var _loop = function _loop() {
   var _articles$i;
   var modal = articles[i].querySelector('dialog');
-  modal.scrollTop = 0;
   var closeModal = articles[i].querySelector('.close-button');
   (_articles$i = articles[i]) === null || _articles$i === void 0 || _articles$i.addEventListener('click', function () {
     modal.showModal();
+    modal.scrollTop = 0;
   });
   closeModal === null || closeModal === void 0 || closeModal.addEventListener('click', function (e) {
     modal.close();
