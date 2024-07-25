@@ -29,7 +29,6 @@ var _loop = function _loop() {
   (_articles$i = articles[i]) === null || _articles$i === void 0 || _articles$i.addEventListener('click', function () {
     modal.showModal();
     modal.scrollTop = 0;
-    modal.pageYOffset = 0;
   });
   closeModal === null || closeModal === void 0 || closeModal.addEventListener('click', function (e) {
     modal.close();

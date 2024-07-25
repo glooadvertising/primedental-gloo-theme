@@ -13,10 +13,10 @@
 html {
 	@apply antialiased scroll-smooth;
 }
-/* 
+
 html:has(dialog[open]:modal) {
 	overflow: hidden;
-} */
+}
 
 a {
 	@apply !no-underline;

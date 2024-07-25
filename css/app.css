@@ -1241,10 +1241,9 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/* 
 html:has(dialog[open]:modal) {
 	overflow: hidden;
-} */
+}
 a{
     text-decoration-line: none !important;
 }

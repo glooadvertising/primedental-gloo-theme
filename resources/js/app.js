@@ -22,7 +22,6 @@ for (let i = 0; i < articles.length; i++) {
 	articles[i]?.addEventListener('click', () => {
 		modal.showModal();
 		modal.scrollTop = 0;
-		modal.pageYOffset = 0;
 	});
 	closeModal?.addEventListener('click', (e) => {
 		modal.close();
