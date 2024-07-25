@@ -41,8 +41,10 @@ for (var i = 0; i < articles.length; i++) {
 // HOME HERO
 
 var welcomeAlt = document.querySelector('#secondary-welcome');
-welcomeAlt.addEventListener('mouseover', function () {
+var thumbLeft = document.querySelector('#thumb-left');
+welcomeAlt === null || welcomeAlt === void 0 ? void 0 : welcomeAlt.addEventListener('mouseover', function () {
   welcomeAlt.classList.remove('opacity-0');
+  thumbLeft.classList.add('opacity-0', 'transition', 'duration-500', 'delay-1000');
 });
 
 // Navigation toggle
