@@ -19,8 +19,10 @@ const articles = document.querySelectorAll('.profile-card');
 for (let i = 0; i < articles.length; i++) {
 	const modal = articles[i].querySelector('dialog');
 	const closeModal = articles[i].querySelector('.close-button');
+	const within = articles[i].querySelector('.within');
 	articles[i]?.addEventListener('click', () => {
 		modal.showModal();
+		modal.scrollTop = 0;
 	});
 	closeModal?.addEventListener('click', (e) => {
 		modal.close();
