@@ -1,4 +1,4 @@
-<div id="mobile-menu" class="menu-visible menu-hidden flex items-center justify-center bg-lavender text-white z-30 rounded-xl lg:hidden">
+<div id="mobile-menu" class="menu-visible menu-hidden flex items-center justify-center bg-lavender text-white z-30 rounded-xl lg:hidden drop-shadow-2xl">
    <div id="closeMobileMenu" class="absolute top-4 right-4 cursor-pointer flex items-center justify-center gap-4 aspect-square w-16 bg-light-lavender/50 rounded-full opacity-50 hover:opacity-100 transition-all">
         <img src="<?php echo get_template_directory_uri(); ?>/resources/images/arrow-back.png" alt="Close">
    </div>
