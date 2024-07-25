@@ -1241,7 +1241,7 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-html:has(dialog[open]:modal) {
+html:has(dialog[open]) {
 	overflow: hidden;
 }
 a{

@@ -14,7 +14,7 @@ html {
 	@apply antialiased scroll-smooth;
 }
 
-html:has(dialog[open]:modal) {
+html:has(dialog[open]) {
 	overflow: hidden;
 }
 
