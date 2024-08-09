@@ -757,14 +757,14 @@ video {
 .w-96{
     width: 24rem;
 }
+.w-\[85\%\]{
+    width: 85%;
+}
 .w-\[90\%\]{
     width: 90%;
 }
 .w-full{
     width: 100%;
-}
-.w-\[85\%\]{
-    width: 85%;
 }
 .flex-1{
     flex: 1 1 0%;
@@ -948,10 +948,6 @@ video {
 .bg-white\/25{
     background-color: rgb(255 255 255 / 0.25);
 }
-.bg-white{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
 .bg-white\/50{
     background-color: rgb(255 255 255 / 0.5);
 }
@@ -1133,6 +1129,12 @@ video {
 .leading-tight{
     line-height: 1.25;
 }
+.leading-4{
+    line-height: 1rem;
+}
+.leading-3{
+    line-height: .75rem;
+}
 .tracking-tight{
     letter-spacing: -0.025em;
 }
@@ -1210,25 +1212,11 @@ video {
 .ring-inset{
     --tw-ring-inset: inset;
 }
-.ring-white\/25{
-    --tw-ring-color: rgb(255 255 255 / 0.25);
-}
-.ring-light-lavender{
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(217 218 226 / var(--tw-ring-opacity));
-}
-.ring-light-lavender\/50{
-    --tw-ring-color: rgb(217 218 226 / 0.5);
-}
-.ring-light-lavender\/10{
-    --tw-ring-color: rgb(217 218 226 / 0.1);
-}
 .ring-light-lavender\/20{
     --tw-ring-color: rgb(217 218 226 / 0.2);
 }
-.drop-shadow-2xl{
-    --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.ring-white\/25{
+    --tw-ring-color: rgb(255 255 255 / 0.25);
 }
 .filter{
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1939,10 +1927,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
         width: 8rem;
     }
 
-    .md\:w-full{
-        width: 100%;
-    }
-
     .md\:max-w-2xl{
         max-width: 42rem;
     }
@@ -2031,10 +2015,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
     .lg\:w-48{
         width: 12rem;
-    }
-
-    .lg\:w-full{
-        width: 100%;
     }
 
     .lg\:flex-1{

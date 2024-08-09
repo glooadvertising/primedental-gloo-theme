@@ -14,7 +14,7 @@ $the_query_dentists = new WP_Query($argsDenitst);
 
     <div class="team-wrapper w-full grid grid-cols-4 bg-lavender/30 py-16 px-6 md:px-12">
         <div class="relative left-col grid xl:flex-row xl:items-start flex-1 text-inherit lg:col-start-2 col-span-4">
-            <h3 class="flex text-3xl font-bold mb-6 mr-6">Dentists</h3>
+            <h3 class="flex text-3xl text-lavender font-bold mb-6 mr-6">Dentists</h3>
 
             <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-16 lg:flex-1">
                 <?php while ($the_query_dentists->have_posts()) { ?>
@@ -45,7 +45,7 @@ $the_query_hygenists = new WP_Query($argsHygenists);
 
     <div class="team-wrapper w-full grid grid-cols-4 bg-lavender/20 py-16 px-6 md:px-12">
         <div class="relative left-col grid xl:flex-row xl:items-start flex-1 text-inherit lg:col-start-2 col-span-4">
-            <h3 class="flex text-3xl font-bold mb-6 mr-6">Hygienists</h3>
+            <h3 class="flex text-3xl text-lavender font-bold mb-6 mr-6">Hygienists</h3>
 
             <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-16 lg:flex-1">
                 <?php while ($the_query_hygenists->have_posts()) { ?>
@@ -80,7 +80,7 @@ $the_query_admin = new WP_Query($argsAdmin);
 
     <div class="team-wrapper w-full grid grid-cols-4 bg-lavender/10 py-16 px-6 md:px-12">
         <div class="relative left-col grid xl:flex-row xl:items-start flex-1 text-inherit lg:col-start-2 col-span-4">
-            <h3 class="flex text-3xl font-bold mb-6 mr-6">Admin</h3>
+            <h3 class="flex text-lavender text-3xl font-bold mb-6 mr-6">Admin</h3>
 
             <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-16 lg:flex-1">
                 <?php while ($the_query_admin->have_posts()) { ?>
