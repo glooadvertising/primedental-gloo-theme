@@ -1,17 +1,19 @@
 <?php get_header(); ?>
 
-<?php 
-    $pages = ['about']
+<?php
+$pages = ['about']
 ?>
 
 <div class="flex items-center justify-center h-full">
-	<div class="px-4 md:px-12 py-24 pb-36 lg:py-36 rounded-xl <?php echo is_page($pages) ? 'bg-light-lavender text-lavender' : 'bg-sage text-white'; ?> h-full <?php echo get_field('show_sidebar') ? 'md:pr-0' : 'w-full'; ?> flex flex-col justify-start items-start relative">
-        <?php global $post; if ( is_page() && $post->post_parent ) { ?>
+    <div class="px-4 md:px-12 py-24 pb-36 lg:py-36 <?php echo is_page($pages) ? 'bg-light-lavender text-lavender' : 'bg-sage text-white'; ?> h-full <?php echo get_field('show_sidebar') ? 'md:pr-0' : 'w-full'; ?> flex flex-col justify-start items-start relative">
+        <?php global $post;
+        if (is_page() && $post->post_parent) { ?>
             <?php get_template_part('template-parts/breadcrumbs'); ?>
         <?php } ?>
-		<div class="flex w-full lg:w-lg xl:w-xl mx-auto gap-8 relative text-inherit">
-			<div class="left-col flex flex-col flex-1 text-inherit mx-0 2xl:mx-12 3xl:mx-48">
-                <h1 class="text-4xl uppercase font-normal mb-6"><?php the_title();?></h1>
+        <div class="flex w-full lg:w-lg xl:w-xl mx-auto gap-8 relative text-inherit">
+            <div class="left-col flex flex-col flex-1 text-inherit mx-0 2xl:mx-12 3xl:mx-48">
+
+                <h1 class="text-4xl uppercase font-normal mb-6"><?php the_title(); ?></h1>
                 <div class="grid md:grid-cols-2 gap-16 relative">
                     <div class="form-container">
                         <div class="page-content font-light">
@@ -22,6 +24,7 @@
                     </div>
                     <div class="px-4 pt-12 md:p-12 pb-16 bg-white/10 rounded-lg info-container flex flex-col gap-8 text-inherit font-light sticky top-0 ring-1 ring-white/25">
                         <div class="page-content pb-8 border-b border-white/50">
+                            <!--?php echo get_field('contact_details'); ?-->
                             <h2 class="text-xl uppercase font-semibold mb-2">Contact Details</h2>
                             <div class="flex flex-col">
                                 <p>9 Gregory Street, Sandy Bay, TAS 7005, Australia</p>
@@ -52,14 +55,13 @@
                     </div>
                 </div>
             </div>
-            <?php if( get_field('show_sidebar') ) { ?>
-            <aside class="right-col hidden h-full relative w-96 md:flex md:flex-col">
-                <?php get_template_part('template-parts/page-side-menu'); ?>
-            </aside>
+            <?php if (get_field('show_sidebar')) { ?>
+                <aside class="right-col hidden h-full relative w-96 md:flex md:flex-col">
+                    <?php get_template_part('template-parts/page-side-menu'); ?>
+                </aside>
             <?php } ?>
-		</div>
-        <?php get_template_part('template-parts/back-to-top'); ?>
-	</div>
+        </div>
+    </div>
 </div>
 
 <?php get_footer(); ?>

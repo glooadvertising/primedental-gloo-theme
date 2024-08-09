@@ -1,33 +1,47 @@
 <?php get_header(); ?>
 
-<?php 
-    $postypes = ['service']
+<?php
+$postypes = ['service']
 ?>
 
-<div class="flex items-center justify-center h-full">
-	<div class="px-6 md:px-12 py-24 pb-36 lg:pr-0 lg:py-36 rounded-xl <?php echo is_singular($postypes) ? 'bg-light-lavender text-lavender' : 'bg-sage text-white'; ?> h-full <?php echo get_field('show_sidebar') ? 'lg:pr-0' : 'w-full'; ?> flex flex-col justify-start items-start relative">
-        <?php global $post; if ( is_page() && $post->post_parent ) { ?>
+<div class="flex items-center justify-center">
+    <div class="px-6 md:px-8 py-24 pb-36 lg:py-36 rounded-xl h-full <?php echo get_field('show_sidebar') ? 'lg:pr-0' : 'w-full'; ?> grid grid-cols-4 grid-rows-2 justify-start items-start relative">
+        <?php global $post;
+        if (is_page() && $post->post_parent) { ?>
             <?php get_template_part('template-parts/breadcrumbs'); ?>
         <?php } ?>
-		<div class="flex w-full lg:w-lg xl:w-xl mx-auto gap-8 xl:gap-16 relative text-inherit">
-			<div class="relative left-col flex flex-col 2xl:flex-row 2xl:items-start 2xl:gap-12 flex-1 text-inherit mx-0">
-                <h1 class="flex text-2xl sm:text-3xl text-wrap lg:text-nowrap xl:text-wrap uppercase font-normal mb-6 xl:w-1/4 xl:sticky xl:top-6"><?php the_title();?></h1>
-                <div class="page-content font-light xl:flex-1">
+        <div class="grid w-full lg:w-lg xl:w-xl mx-auto gap-6 relative text-inherit col-span-4 md:col-span-3 row-span-1 md:row-span-2">
+            <div class="relative left-col grid xl:grid-cols-3 text-inherit">
+                <h1 class="flex text-4xl text-lavender uppercase font-normal mb-6 mr-6"><?php the_title(); ?></h1>
+                <div class="page-content font-light col-span-2">
                     <?php the_content(); ?>
                 </div>
             </div>
-            <?php if( is_singular('service') ) { ?>
-            <aside class="right-col hidden h-full relative w-64 lg:flex md:flex-col">
-                <?php get_template_part('template-parts/other-services'); ?>
-            </aside>
-            <?php } ?>
-		</div>
-        <?php is_page('about') ? get_template_part('template-parts/team') : null; ?>
-        <?php is_page('services') ? get_template_part('template-parts/services') : null; ?>
+        </div>
+        <div class="invisible-square flex absolute w-[90%] sm:w-2/3 md:w-1/4 max-h-full aspect-square overflow-hidden right-0 bottom-0 row-start-2 md:row-start-auto">
+            <img src="<?php echo get_the_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/resources/images/home-page.jpg'; ?>" alt="" class="absolute right-0 top-0 w-full aspect-square object-cover mask">
+        </div>
 
-        <?php get_template_part('template-parts/back-to-services'); ?>
-        <?php get_template_part('template-parts/back-to-top'); ?>
-	</div>
+    </div>
 </div>
+
+<div class="team-wrapper w-full flex items-center bg-sage/20 py-32 px-6 md:px-8">
+    <div class="relative left-col grid grid-cols-4 xl:grid-cols-8 xl:flex-row flex-1 text-inherit mx-0">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 md:col-start-2 col-span-4 xl:col-span-6 xl:col-start-3">
+            <div class="page-content font-light col-span-3">
+
+                <?php echo get_field('content_follow-up') ?>
+            </div>
+            <?php get_template_part('template-parts/other-services'); ?>
+        </div>
+    </div>
+    <div class="hidden md:flex md:items-center md:justify-center absolute left-0 z-0">
+        <img src="<?php echo get_field('service_icon'); ?>" alt="" class="absolute z-10 w-28">
+        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/thumb-right-lavender.svg" alt="" class="w-48">
+    </div>
+
+</div>
+
+
 
 <?php get_footer(); ?>

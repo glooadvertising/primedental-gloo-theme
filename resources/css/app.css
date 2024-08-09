@@ -26,23 +26,26 @@ a {
 	@apply flex;
 }
 .main-menu ul li a {
-	@apply w-full sm:w-auto flex-none text-lavender text-sm leading-6 font-light hover:font-semibold hover:bg-light-lavender/10 uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
+	@apply w-full sm:w-auto flex-none text-lavender text-sm leading-6 font-semibold hover:font-bold hover:bg-light-lavender/10 lowercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
+}
+.main-menu.main-menu-home ul li a {
+	@apply w-full sm:w-auto flex-none text-white text-sm leading-6 font-semibold hover:font-bold hover:bg-light-lavender/10 lowercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
 }
 
 .mobile-menu ul li a {
-	@apply block text-white/50 hover:text-white text-xl leading-6 font-light hover:font-semibold hover:bg-light-lavender/10 uppercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
+	@apply block text-white/50 hover:text-white text-xl leading-6 font-semibold hover:font-bold hover:bg-light-lavender/10 lowercase py-2 px-6 border border-transparent rounded-sm focus:outline-none transition-all duration-200;
 }
 
 .menu-visible {
-	@apply fixed top-4 right-4 bottom-4 left-4 transition-all;
+	@apply fixed top-4 bottom-4 left-4 right-4 transition-all;
 }
 
 .menu-hidden {
-	@apply absolute right-full -left-full transition-all;
+	@apply absolute -left-full right-full transition-all;
 }
 
 .btn {
-	@apply sm:w-auto flex-none bg-sage hover:bg-lavender text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:outline-none transition-colors duration-200 hover:ring-1 ring-sage/50;
+	@apply sm:w-auto flex-none bg-sage hover:bg-lavender text-white text-sm leading-6 font-extrabold lowercase py-2 px-6 border border-transparent rounded-full focus:outline-none transition-colors duration-200 hover:ring-1 ring-sage/50;
 }
 
 .wpforms-submit-container {
@@ -63,7 +66,7 @@ a {
 }
 
 #wpforms-submit-71.wpforms-submit {
-	@apply sm:w-auto flex-none bg-lavender hover:bg-sage text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-tl-full rounded-bl-full focus:outline-none transition-colors duration-200 hover:ring-1 ring-sage/50;
+	@apply sm:w-auto flex-none bg-lavender hover:bg-sage text-white text-sm leading-6 font-medium uppercase py-2 px-6 border border-transparent rounded-full focus:outline-none transition-colors duration-200 hover:ring-1 ring-sage/50;
 }
 
 .btn-inv {
@@ -75,7 +78,7 @@ a {
 }
 
 .page-content h2.wp-block-heading {
-	@apply text-2xl uppercase font-normal mb-2;
+	@apply text-2xl uppercase font-bold mb-2 text-lavender;
 }
 
 .page-content h2.wp-block-heading:not(:first-child) {
@@ -83,7 +86,7 @@ a {
 }
 
 .page-content h3.wp-block-heading {
-	@apply text-xl uppercase font-bold mb-2;
+	@apply text-xl uppercase font-bold mb-2 text-lavender;
 }
 
 .page-content h3.wp-block-heading:not(:first-child) {
@@ -91,10 +94,11 @@ a {
 }
 
 .page-content h4.wp-block-heading {
-	@apply text-sm uppercase font-extrabold mb-1;
+	@apply text-sm uppercase font-extrabold mb-1 text-sage;
 }
 
-.page-content ul.wp-block-list {
+.page-content ul.wp-block-list,
+.page-content ul {
 	@apply list-disc mt-3 mb-4 pl-6;
 }
 
@@ -107,7 +111,7 @@ a {
 }
 
 .left-col .page-content p:first-child strong {
-	@apply uppercase font-light text-xl;
+	@apply uppercase font-semibold text-xl text-lavender;
 }
 
 .page-content .wp-block-table {
@@ -191,4 +195,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 
 .wpforms-error {
 	@apply !uppercase !font-bold;
+}
+
+.mask {
+	mask-image: url(../images/thumb-left.png);
+	mask-repeat: no-repeat;
+	mask-size: 100%;
 }

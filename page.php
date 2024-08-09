@@ -1,32 +1,42 @@
 <?php get_header(); ?>
 
-<?php 
-    $pages = ['about']
+<?php
+$pages = ['about']
 ?>
 
-<div class="flex items-center justify-center h-full">
-	<div class="px-6 md:px-12 py-24 pb-36 lg:py-36 rounded-xl <?php echo is_page($pages) ? 'bg-light-lavender text-lavender' : 'bg-sage text-white'; ?> h-full <?php echo get_field('show_sidebar') ? 'lg:pr-0' : 'w-full'; ?> flex flex-col justify-start items-start relative">
-        <?php global $post; if ( is_page() && $post->post_parent ) { ?>
+<div class="flex items-center justify-center">
+    <div class="px-6 md:px-8 py-24 pb-36 lg:py-36 rounded-xl h-full grid lg:grid-cols-3 xl:grid-cols-4 grid-rows-2 justify-start items-start relative">
+        <?php global $post;
+        if (is_page() && $post->post_parent) { ?>
             <?php get_template_part('template-parts/breadcrumbs'); ?>
         <?php } ?>
-		<div class="flex w-full lg:w-lg xl:w-xl mx-auto gap-8 relative text-inherit">
-			<div class="relative left-col flex flex-col xl:flex-row xl:items-start xl:gap-12 flex-1 text-inherit mx-0 2xl:mx-12 3xl:mx-48">
-                <h1 class="flex text-4xl uppercase font-normal mb-6 xl:w-1/5 xl:sticky xl:top-6"><?php the_title();?></h1>
-                <div class="page-content font-light xl:flex-1">
+        <div class="grid w-full lg:w-lg xl:w-xl mx-auto gap-6 relative text-inherit col-span-4 row-span-1 md:row-span-2 z-10">
+            <div class="relative left-col grid xl:grid-cols-4 text-inherit">
+                <h1 class="flex text-4xl text-lavender uppercase font-normal mb-6 mr-6"><?php the_title(); ?></h1>
+                <div class="page-content font-light col-span-2">
                     <?php the_content(); ?>
                 </div>
+                <?php if (get_field('show_sidebar')) { ?>
+                    <aside class="right-col hidden relative xl:inline-block">
+                        <?php get_template_part('template-parts/page-side-menu'); ?>
+                    </aside>
+                <?php } ?>
             </div>
-            <?php if( get_field('show_sidebar') ) { ?>
-            <aside class="right-col hidden h-full relative w-96 lg:flex md:flex-col">
-                <?php get_template_part('template-parts/page-side-menu'); ?>
-            </aside>
-            <?php } ?>
-		</div>
-        <?php is_page('about') ? get_template_part('template-parts/team') : null; ?>
-        <?php is_page('services') ? get_template_part('template-parts/services') : null; ?>
+        </div>
+        <?php if (!is_page('privacy-policy')) { ?>
+            <div class="invisible-square flex absolute w-[90%] sm:w-2/3 md:w-1/4 max-h-full aspect-square overflow-hidden right-0 bottom-0 row-start-2 md:row-start-auto">
+                <img src="<?php echo get_the_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/resources/images/home-page.jpg'; ?>" alt="" class="absolute right-0 top-0 w-full aspect-square object-cover mask">
+            </div>
+        <?php }; ?>
 
-        <?php get_template_part('template-parts/back-to-top'); ?>
-	</div>
+    </div>
 </div>
+
+<div class="flex items-center justify-center">
+    <div class="rounded-xl h-full <?php echo get_field('show_sidebar') ? 'lg:pr-0' : 'w-full'; ?> flex flex-col justify-start items-start relative">
+        <?php is_page('about') ? get_template_part('template-parts/team') : null; ?>
+    </div>
+</div>
+<?php is_page('services') ? get_template_part('template-parts/services') : null; ?>
 
 <?php get_footer(); ?>

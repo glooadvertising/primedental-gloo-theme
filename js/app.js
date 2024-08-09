@@ -43,12 +43,18 @@ for (var i = 0; i < articles.length; i++) {
 
 // HOME HERO
 
-var welcomeAlt = document.querySelector('#secondary-welcome');
-var thumbLeft = document.querySelector('#thumb-left');
-welcomeAlt === null || welcomeAlt === void 0 ? void 0 : welcomeAlt.addEventListener('mouseover', function () {
-  welcomeAlt.classList.remove('opacity-0');
-  thumbLeft.classList.add('opacity-0', 'transition', 'duration-500', 'delay-1000');
-});
+// const welcomeAlt = document.querySelector('#secondary-welcome');
+// const thumbLeft = document.querySelector('#thumb-left');
+
+// welcomeAlt?.addEventListener('mouseover', () => {
+// 	welcomeAlt.classList.remove('opacity-0');
+// 	thumbLeft.classList.add(
+// 		'opacity-0',
+// 		'transition',
+// 		'duration-500',
+// 		'delay-1000'
+// 	);
+// });
 
 // Navigation toggle
 //

@@ -31,18 +31,18 @@ for (let i = 0; i < articles.length; i++) {
 
 // HOME HERO
 
-const welcomeAlt = document.querySelector('#secondary-welcome');
-const thumbLeft = document.querySelector('#thumb-left');
+// const welcomeAlt = document.querySelector('#secondary-welcome');
+// const thumbLeft = document.querySelector('#thumb-left');
 
-welcomeAlt?.addEventListener('mouseover', () => {
-	welcomeAlt.classList.remove('opacity-0');
-	thumbLeft.classList.add(
-		'opacity-0',
-		'transition',
-		'duration-500',
-		'delay-1000'
-	);
-});
+// welcomeAlt?.addEventListener('mouseover', () => {
+// 	welcomeAlt.classList.remove('opacity-0');
+// 	thumbLeft.classList.add(
+// 		'opacity-0',
+// 		'transition',
+// 		'duration-500',
+// 		'delay-1000'
+// 	);
+// });
 
 // Navigation toggle
 //
